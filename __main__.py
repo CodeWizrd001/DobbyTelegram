@@ -25,16 +25,16 @@ def Help(bot, update) :
     print(update)
     print(bot)'''
 
-
-global updater
-global dp
-global dp1
-updater = Updater('994787768:AAEQRpT5yjdeSxvFVvgnsFGirA4og0MWTI8')
-dp = updater.dispatcher
-dp.add_handler(CommandHandler('bop',bop))
-dp.add_handler(CommandHandler('help',Help))
-updater.start_polling()
-updater.idle()
+def main() :
+    global updater
+    global dp
+    global dp1
+    updater = Updater('994787768:AAEQRpT5yjdeSxvFVvgnsFGirA4og0MWTI8')
+    dp = updater.dispatcher
+    dp.add_handler(CommandHandler('bop',bop))
+    dp.add_handler(CommandHandler('help',Help))
+    updater.start_polling()
+    updater.idle()
 
 if __name__ == '__main__':
-    pass
+    main()
