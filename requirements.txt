@@ -1,1 +1,1 @@
-telegram>=12.0.0
+telegram>=0.0.1
